@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LibraryManagement</class>
+ <widget class="QWidget" name="LibraryManagement">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Library Management</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayoutMain">
+   <!-- Form Layout -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutForm">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayoutLeft">
+       <item>
+        <widget class="QLabel" name="labelBookNo">
+         <property name="text">
+          <string>Book No*</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditBookNo"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelBookName">
+         <property name="text">
+          <string>Book Name*</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditBookName"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelISBN">
+         <property name="text">
+          <string>ISBN</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditISBN"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelSubject">
+         <property name="text">
+          <string>Subject</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditSubject"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayoutRight">
+       <item>
+        <widget class="QLabel" name="labelAuthor">
+         <property name="text">
+          <string>Author*</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditAuthor"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelPublisher">
+         <property name="text">
+          <string>Publisher</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditPublisher"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelLanguage">
+         <property name="text">
+          <string>Language*</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEditLanguage"/>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelDateOfPurchase">
+         <property name="text">
+          <string>Date of Purchase</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="dateEditPurchase">
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <!-- Buttons Layout -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutButtons">
+     <item>
+      <widget class="QPushButton" name="btnAddBook">
+       <property name="text">
+        <string>Add Book</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSearchBook">
+       <property name="text">
+        <string>Search Book</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnRefresh">
+       <property name="text">
+        <string>Refresh</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <!-- Table Layout -->
+   <item>
+    <widget class="QTableWidget" name="tableWidgetBooks">
+     <property name="columnCount">
+      <number>7</number>
+     </property>
+     <property name="horizontalHeaderLabels">
+      <stringlist>
+       <string>Book No</string>
+       <string>Book Name</string>
+       <string>Author</string>
+       <string>ISBN</string>
+       <string>Subject</string>
+       <string>Language</string>
+       <string>Date of Purchase</string>
+      </stringlist>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
